@@ -1,0 +1,351 @@
+{
+  "groups": [
+    {
+      "id": "windows",
+      "title": "Fenster",
+      "icon": "🪟",
+      "priority": "high",
+      "deadline": "2026-07-31",
+      "categories": [
+        {
+          "title": "Vorbereitung",
+          "tasks": [
+            {
+              "title": "Fensterlaibungen ausstemmen",
+              "status": "done",
+              "plannedFor": "",
+              "note": "Bereits erledigt."
+            },
+            {
+              "title": "Fensterbänke absägen",
+              "status": "todo",
+              "plannedFor": "2026-07-18",
+              "note": "Muss vor dem Fenstereinbau erledigt sein."
+            },
+            {
+              "title": "Glattstrich an allen Fensterlaibungen",
+              "status": "todo",
+              "plannedFor": "2026-07-18",
+              "note": "Vorbereitung für den Fensterbauer."
+            }
+          ]
+        },
+        {
+          "title": "Fenstereinbau",
+          "tasks": [
+            {
+              "title": "Fensterbauer (Ende Juli)",
+              "status": "todo",
+              "plannedFor": "2026-07-30",
+              "note": "Fenster werden montiert."
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "roof",
+      "title": "Dach",
+      "icon": "🏠",
+      "priority": "high",
+      "categories": [
+        {
+          "title": "Bestand",
+          "tasks": [
+            {
+              "title": "Gerüst gestellt",
+              "status": "done",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Dach abgedeckt",
+              "status": "done",
+              "plannedFor": "",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "title": "Fertigstellung",
+          "tasks": [
+            {
+              "title": "Dach eindecken",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "PV-Anlage montieren",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Solarthermie anschließen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "facade",
+      "title": "Fassade",
+      "icon": "🧱",
+      "priority": "high",
+      "deadline": "2026-09-01",
+      "categories": [
+        {
+          "title": "Vorbereitung",
+          "tasks": [
+            {
+              "title": "Graben ums Haus erweitern",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Dichtschlämme auftragen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Balkon abdichten",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Balkongeländer demontieren",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "bathroom",
+      "title": "Bad",
+      "icon": "🚿",
+      "priority": "medium",
+      "categories": [
+        {
+          "title": "Rückbau",
+          "tasks": [
+            {
+              "title": "Badewanne entfernen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Duschwanne entfernen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Waschtisch entfernen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Toilette entfernen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Eckventile prüfen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "interior",
+      "title": "Innenausbau",
+      "icon": "🪵",
+      "priority": "medium",
+      "categories": [
+        {
+          "title": "Rückbau",
+          "tasks": [
+            {
+              "title": "Alle Böden entfernen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Küchenboden entfernen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Wand für Estrichschutz entfernen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": "Vorher Estrich schützen."
+            },
+            {
+              "title": "Wand im Bad entfernen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Estrichschienen entfernen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "electrical",
+      "title": "Elektrik",
+      "icon": "⚡",
+      "priority": "medium",
+      "categories": [
+        {
+          "title": "EG",
+          "tasks": [
+            {
+              "title": "Schlitze fräsen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Leitungen verlegen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Leitungen für elektrische Rollläden",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Neuen Sicherungskasten anschließen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "kitchen",
+      "title": "Küche",
+      "icon": "🍽️",
+      "priority": "low",
+      "categories": [
+        {
+          "title": "Vorbereitung",
+          "tasks": [
+            {
+              "title": "Heizkörper entfernen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Wände ausbessern",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Wände verspachteln",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Wände verputzen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "floorplan",
+      "title": "Grundriss",
+      "icon": "🚪",
+      "priority": "medium",
+      "categories": [
+        {
+          "title": "Umbauten",
+          "tasks": [
+            {
+              "title": "Durchbruch Schlafzimmer → Ankleide",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Sturz einsetzen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            },
+            {
+              "title": "Tür Flur → Ankleide schließen",
+              "status": "todo",
+              "plannedFor": "",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "general",
+      "title": "Laufende Arbeiten",
+      "icon": "♻️",
+      "priority": "medium",
+      "categories": [
+        {
+          "title": "Allgemein",
+          "tasks": [
+            {
+              "title": "Bauschutt entsorgen",
+              "status": "doing",
+              "plannedFor": "",
+              "note": "Laufende Aufgabe."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "headline": "Aus Kindheitserinnerungen entsteht unser neues Zuhause.",
+    "description": "Begleitet uns auf unserer Reise durch die Sanierung unseres Hauses. Hier findet ihr jederzeit den aktuellen Fortschritt, die nächsten Baustellentage und viele Bilder."
+  },
+
+  "constructionDay": {
+    "date": "2026-07-18",
+    "time": "09:30"
+  },
+
+  "stats": {
+    "photos": 126
+  }
+}
