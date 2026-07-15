@@ -4,14 +4,19 @@
 
 const menuButton = document.querySelector(".menu-toggle");
 const mobileMenu = document.querySelector(".mobile-menu");
+const closeButton = document.querySelector(".close-menu");
 
-// Menü öffnen / schließen
+// Menü öffnen
 menuButton.addEventListener("click", () => {
 
-    mobileMenu.classList.toggle("open");
+    mobileMenu.classList.add("open");
 
-    menuButton.textContent =
-        mobileMenu.classList.contains("open") ? "✕" : "☰";
+});
+
+// Menü schließen
+closeButton.addEventListener("click", () => {
+
+    mobileMenu.classList.remove("open");
 
 });
 
@@ -21,8 +26,6 @@ document.querySelectorAll(".mobile-menu a").forEach(link => {
     link.addEventListener("click", () => {
 
         mobileMenu.classList.remove("open");
-
-        menuButton.textContent = "☰";
 
     });
 
