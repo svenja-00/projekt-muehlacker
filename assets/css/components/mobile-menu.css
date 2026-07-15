@@ -1,0 +1,195 @@
+/* ===========================================================
+   MOBILE MENU
+===========================================================*/
+
+.menu-toggle{
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    background:none;
+
+    color:var(--primary);
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+    z-index:6000;
+
+}
+
+.menu-toggle:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+/* ===========================================================
+   MOBILE MENU PANEL
+===========================================================*/
+
+.mobile-menu{
+
+    position:fixed;
+
+    top:0;
+
+    right:-100%;
+
+    width:300px;
+
+    max-width:85%;
+
+    height:100vh;
+
+    background:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+    padding:110px 40px 40px;
+
+    box-shadow:-10px 0 35px rgba(0,0,0,.12);
+
+    transition:right .35s ease;
+
+    z-index:5500;
+
+}
+
+.mobile-menu.open{
+
+    right:0;
+
+}
+
+
+/* ===========================================================
+   OVERLAY
+===========================================================*/
+
+.menu-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:5400;
+
+}
+
+.menu-overlay.open{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+/* ===========================================================
+   CLOSE BUTTON
+===========================================================*/
+
+.close-menu{
+
+    position:absolute;
+
+    top:28px;
+
+    right:28px;
+
+    border:none;
+
+    background:none;
+
+    color:var(--primary);
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.close-menu:hover{
+
+    transform:rotate(90deg);
+
+}
+
+
+/* ===========================================================
+   LINKS
+===========================================================*/
+
+.mobile-menu a{
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+    color:var(--text);
+
+    transition:var(--transition);
+
+}
+
+.mobile-menu a:hover{
+
+    color:var(--primary);
+
+    padding-left:8px;
+
+}
+
+
+/* ===========================================================
+   ADMIN BUTTON
+===========================================================*/
+
+.mobile-admin{
+
+    margin-top:auto;
+
+}
+
+
+/* ===========================================================
+   RESPONSIVE
+===========================================================*/
+
+@media(max-width:768px){
+
+    .menu-toggle{
+
+        display:flex;
+
+    }
+
+}

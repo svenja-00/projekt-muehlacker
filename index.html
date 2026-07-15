@@ -4,12 +4,15 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Projekt Mühlacker</title>
 
-    <meta name="description"
-        content="Unser Hausbauprojekt - Fortschritt, Aufgaben und Bautagebuch.">
+    <meta
+        name="description"
+        content="Unser Hausbauprojekt – Fortschritt, Aufgaben und Bautagebuch."
+    >
 
     <!-- Google Font -->
 
@@ -17,12 +20,47 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 
-    <!-- CSS -->
+    <!-- ===========================
+         BASE
+    ============================ -->
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/base/reset.css">
+    <link rel="stylesheet" href="assets/css/base/variables.css">
+    <link rel="stylesheet" href="assets/css/base/typography.css">
+    <link rel="stylesheet" href="assets/css/base/layout.css">
+
+    <!-- ===========================
+         COMPONENTS
+    ============================ -->
+
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/components/cards.css">
+    <link rel="stylesheet" href="assets/css/components/progress.css">
+    <link rel="stylesheet" href="assets/css/components/mobile-menu.css">
+
+    <!-- ===========================
+         SECTIONS
+    ============================ -->
+
+    <link rel="stylesheet" href="assets/css/sections/header.css">
+    <link rel="stylesheet" href="assets/css/sections/hero.css">
+    <link rel="stylesheet" href="assets/css/sections/dashboard.css">
+    <link rel="stylesheet" href="assets/css/sections/tasks.css">
+    <link rel="stylesheet" href="assets/css/sections/gallery.css">
+    <link rel="stylesheet" href="assets/css/sections/timeline.css">
+    <link rel="stylesheet" href="assets/css/sections/footer.css">
+
+    <!-- ===========================
+         UTILITIES
+    ============================ -->
+
+    <link rel="stylesheet" href="assets/css/utilities/animation.css">
+    <link rel="stylesheet" href="assets/css/utilities/responsive.css">
 
 </head>
 
@@ -71,6 +109,7 @@
 </nav>
 
     </header>
+    <div class="menu-overlay"></div>
     <div class="mobile-menu">
 
     <button class="close-menu">
@@ -149,7 +188,7 @@
 
         <div class="dashboard-grid">
 
-            <div class="dashboard-card next-day">
+            <div class="dashboard-card next-day card card-padding">
 
     <span class="card-icon">🏗</span>
 
@@ -207,7 +246,7 @@
 
 </div>
 
-            <div class="dashboard-card">
+            <div class="dashboard-card card card-padding card-hover">
 
                 <span class="card-icon">📈</span>
 
@@ -217,7 +256,7 @@
 
             </div>
 
-            <div class="dashboard-card">
+            <div class="dashboard-card card card-padding card-hover">
 
                 <span class="card-icon">🛠</span>
 
@@ -227,7 +266,7 @@
 
             </div>
 
-            <div class="dashboard-card">
+            <div class="dashboard-card card card-padding card-hover">
 
                 <span class="card-icon">📷</span>
 

@@ -1,0 +1,69 @@
+/* ===========================================================
+   LAYOUT
+===========================================================*/
+
+.container{
+
+    width:min(1240px,90%);
+
+    margin-inline:auto;
+
+}
+
+section{
+
+    scroll-margin-top:150px;
+
+}
+
+.section{
+
+    padding:120px 0;
+
+}
+
+/* ===========================================================
+   SECTION TITLE
+===========================================================*/
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title span{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:#EFE8DF;
+
+    color:var(--primary);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.section-title h2{
+
+    margin-bottom:18px;
+
+}
+
+.section-title p{
+
+    max-width:700px;
+
+    margin:auto;
+
+}

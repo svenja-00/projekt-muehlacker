@@ -58,7 +58,8 @@ function createTaskCard(group){
     const card =
         document.createElement("div");
 
-    card.className = "task-card";
+    card.className =
+    "task-card card card-padding card-hover";
 
     // ----------------------------
     // Fortschritt berechnen

@@ -1,0 +1,135 @@
+/* ===========================================================
+   TIMELINE
+===========================================================*/
+
+#timeline{
+
+    padding:var(--space-xxl) 0;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:0 auto;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:28px;
+
+    top:0;
+
+    bottom:0;
+
+    width:2px;
+
+    background:#E6DED5;
+
+}
+
+
+/* ===========================================================
+   ITEM
+===========================================================*/
+
+.timeline-item{
+
+    position:relative;
+
+    display:flex;
+
+    gap:30px;
+
+    margin-bottom:40px;
+
+}
+
+.timeline-dot{
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    flex-shrink:0;
+
+    margin-top:8px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.timeline-content{
+
+    flex:1;
+
+}
+
+.timeline-date{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+.timeline-title{
+
+    margin-bottom:12px;
+
+}
+
+.timeline-text{
+
+    color:var(--text-light);
+
+    line-height:1.7;
+
+}
+
+
+/* ===========================================================
+   IMAGE
+===========================================================*/
+
+.timeline-image{
+
+    margin-top:18px;
+
+    overflow:hidden;
+
+    border-radius:var(--radius-md);
+
+}
+
+.timeline-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.4s;
+
+}
+
+.timeline-image:hover img{
+
+    transform:scale(1.05);
+
+}

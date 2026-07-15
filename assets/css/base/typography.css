@@ -1,0 +1,81 @@
+/* ===========================================================
+   TYPOGRAPHY
+===========================================================*/
+
+body{
+
+    font-family:"Montserrat",sans-serif;
+
+    color:var(--text);
+
+    line-height:1.6;
+
+    font-size:16px;
+
+}
+
+/* ===========================================================
+   HEADINGS
+===========================================================*/
+
+h1{
+
+    font-size:clamp(3rem,7vw,5rem);
+
+    font-weight:800;
+
+    line-height:1.05;
+
+    letter-spacing:-2px;
+
+}
+
+h2{
+
+    font-size:clamp(2rem,4vw,3rem);
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+h3{
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+}
+
+h4{
+
+    font-size:1.15rem;
+
+    font-weight:600;
+
+}
+
+/* ===========================================================
+   TEXT
+===========================================================*/
+
+p{
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+}
+
+strong{
+
+    font-weight:700;
+
+}
+
+small{
+
+    font-size:.875rem;
+
+}

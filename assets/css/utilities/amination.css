@@ -1,0 +1,217 @@
+/* ===========================================================
+   ANIMATIONS
+===========================================================*/
+
+/* ===========================================================
+   TRANSITIONS
+===========================================================*/
+
+.fade{
+
+    transition:opacity .35s ease;
+
+}
+
+.scale{
+
+    transition:transform .35s ease;
+
+}
+
+.rotate{
+
+    transition:transform .35s ease;
+
+}
+
+.shadow{
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+/* ===========================================================
+   HOVER EFFECTS
+===========================================================*/
+
+.hover-lift:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.hover-scale:hover{
+
+    transform:scale(1.03);
+
+}
+
+.hover-rotate:hover{
+
+    transform:rotate(3deg);
+
+}
+
+/* ===========================================================
+   FADE IN
+===========================================================*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+.fade-in{
+
+    animation:fadeIn .6s ease forwards;
+
+}
+
+/* ===========================================================
+   FADE UP
+===========================================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.fade-up{
+
+    animation:fadeUp .7s ease forwards;
+
+}
+
+/* ===========================================================
+   SCALE IN
+===========================================================*/
+
+@keyframes scaleIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.95);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+.scale-in{
+
+    animation:scaleIn .45s ease forwards;
+
+}
+
+/* ===========================================================
+   SLIDE LEFT
+===========================================================*/
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.slide-left{
+
+    animation:slideLeft .6s ease forwards;
+
+}
+
+/* ===========================================================
+   SLIDE RIGHT
+===========================================================*/
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.slide-right{
+
+    animation:slideRight .6s ease forwards;
+
+}
+
+/* ===========================================================
+   SPIN
+===========================================================*/
+
+.spin{
+
+    transition:transform .35s ease;
+
+}
+
+.spin.open{
+
+    transform:rotate(45deg);
+
+}
