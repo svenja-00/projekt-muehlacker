@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="assets/css/components/cards.css">
     <link rel="stylesheet" href="assets/css/components/progress.css">
     <link rel="stylesheet" href="assets/css/components/mobile-menu.css">
+    <link rel="stylesheet" href="assets/css/components/lightbox.css">
 
     <!-- ===========================
          SECTIONS
@@ -264,15 +265,15 @@
 
             </div>
 
-            <div class="dashboard-card card card-padding card-hover">
+            <a href="#gallery" class="dashboard-card card card-padding card-hover dashboard-link">
 
                 <span class="card-icon">📷</span>
 
                 <h3>Bilder</h3>
 
-                <h2 id="photo-count">126</h2>
+                <h2 id="photo-count">127</h2>
 
-            </div>
+            </a>
 
         </div>
 
@@ -316,26 +317,39 @@
          GALERIE
     =========================== -->
 
-    <section id="gallery">
+  <section id="gallery">
 
-        <div class="container">
+    <div class="container">
 
-            <div class="section-title">
+        <div class="section-title">
 
-                <span>Galerie</span>
+            <span class="section-tag">
 
-                <h2>Fotos vom Haus</h2>
+                Galerie
 
-            </div>
+            </span>
 
-            <div id="gallery-container">
-
-            </div>
+            <h2>Unser Baufortschritt in Bildern</h2>
 
         </div>
 
-    </section>
+        <!-- Kategorien -->
 
+        <div id="gallery-categories"
+             class="gallery-categories">
+
+        </div>
+
+        <!-- Bilder -->
+
+        <div id="gallery-grid"
+             class="gallery-grid">
+
+        </div>
+
+    </div>
+
+</section>
     <!-- ==========================
          BAUTAGEBUCH
     =========================== -->
@@ -383,17 +397,57 @@
         </div>
 
     </footer>
+<!-- ==========================
+     LIGHTBOX
+========================== -->
+
+<div id="lightbox" class="lightbox">
+
+    <button class="lightbox-close">
+
+        ✕
+
+    </button>
+
+    <button class="lightbox-prev">
+
+        ❮
+
+    </button>
+
+    <img
+        id="lightbox-image"
+        src=""
+        alt="Projekt Mühlacker">
+
+<div class="lightbox-counter"
+
+     id="lightbox-counter">
+
+</div>
+
+    <button class="lightbox-next">
+
+        ❯
+
+    </button>
+
+</div>
+
 
     <!-- ==========================
          JAVASCRIPT
     =========================== -->
 
-    <script src="assets/js/dashboard.js"></script>
-
-    <script src="assets/js/tasks.js"></script>
-
     <script src="assets/js/app.js"></script>
 
+<script src="assets/js/dashboard.js"></script>
+
+<script src="assets/js/tasks.js"></script>
+
+<script src="assets/js/gallery.js"></script>
+
+<script src="assets/js/lightbox.js"></script>
 
 
 </body>

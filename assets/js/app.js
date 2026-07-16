@@ -4,7 +4,7 @@
 
 const menuButton = document.querySelector(".menu-toggle");
 const mobileMenu = document.querySelector(".mobile-menu");
-const closeButton = document.querySelector(".close-menu");
+const mobileCloseButton = document.querySelector(".close-menu");
 
 // Menü öffnen
 menuButton.addEventListener("click", () => {
@@ -14,7 +14,7 @@ menuButton.addEventListener("click", () => {
 });
 
 // Menü schließen
-closeButton.addEventListener("click", () => {
+mobileCloseButton.addEventListener("click", () => {
 
     mobileMenu.classList.remove("open");
 

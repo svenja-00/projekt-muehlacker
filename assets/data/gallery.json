@@ -1,0 +1,639 @@
+﻿{
+    "images":  [
+                   {
+                       "id":  1,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260314_094403.jpg"
+                   },
+                   {
+                       "id":  2,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260314_094412.jpg"
+                   },
+                   {
+                       "id":  3,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260314_094414.jpg"
+                   },
+                   {
+                       "id":  4,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260314_094832.jpg"
+                   },
+                   {
+                       "id":  5,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260314_094833.jpg"
+                   },
+                   {
+                       "id":  6,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260314_110622.jpg"
+                   },
+                   {
+                       "id":  7,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260314_132916.jpg"
+                   },
+                   {
+                       "id":  8,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260324_173926.jpg"
+                   },
+                   {
+                       "id":  9,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260324_173932.jpg"
+                   },
+                   {
+                       "id":  10,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260324_173934.jpg"
+                   },
+                   {
+                       "id":  11,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260404_113226.jpg"
+                   },
+                   {
+                       "id":  12,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260404_113231.jpg"
+                   },
+                   {
+                       "id":  13,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260404_142553.jpg"
+                   },
+                   {
+                       "id":  14,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260418_131840.jpg"
+                   },
+                   {
+                       "id":  15,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260509_124327.jpg"
+                   },
+                   {
+                       "id":  16,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260509_134345.jpg"
+                   },
+                   {
+                       "id":  17,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260509_150357.jpg"
+                   },
+                   {
+                       "id":  18,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260516_103625.jpg"
+                   },
+                   {
+                       "id":  19,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260530_102444.jpg"
+                   },
+                   {
+                       "id":  20,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260606_130547.jpg"
+                   },
+                   {
+                       "id":  21,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260606_130554.jpg"
+                   },
+                   {
+                       "id":  22,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260606_134322.jpg"
+                   },
+                   {
+                       "id":  23,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260606_134348(0).jpg"
+                   },
+                   {
+                       "id":  24,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260606_134354(0).jpg"
+                   },
+                   {
+                       "id":  25,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260606_134354.jpg"
+                   },
+                   {
+                       "id":  26,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260606_134402.jpg"
+                   },
+                   {
+                       "id":  27,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260606_134404.jpg"
+                   },
+                   {
+                       "id":  28,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260606_134405.jpg"
+                   },
+                   {
+                       "id":  29,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260606_135809.jpg"
+                   },
+                   {
+                       "id":  30,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260606_135822.jpg"
+                   },
+                   {
+                       "id":  31,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260606_135829.jpg"
+                   },
+                   {
+                       "id":  32,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260606_141418.jpg"
+                   },
+                   {
+                       "id":  33,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260609_165601.jpg"
+                   },
+                   {
+                       "id":  34,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/20260609_165828.jpg"
+                   },
+                   {
+                       "id":  35,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/IMG-20260314-WA0003.jpg"
+                   },
+                   {
+                       "id":  36,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/IMG-20260314-WA0004.jpg"
+                   },
+                   {
+                       "id":  37,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/IMG-20260314-WA0005.jpg"
+                   },
+                   {
+                       "id":  38,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/IMG-20260314-WA0006.jpg"
+                   },
+                   {
+                       "id":  39,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/IMG-20260314-WA0007.jpg"
+                   },
+                   {
+                       "id":  40,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/IMG-20260314-WA0009.jpg"
+                   },
+                   {
+                       "id":  41,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/IMG-20260314-WA0010.jpg"
+                   },
+                   {
+                       "id":  42,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/IMG-20260314-WA0012.jpg"
+                   },
+                   {
+                       "id":  43,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/IMG-20260314-WA0014.jpg"
+                   },
+                   {
+                       "id":  44,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/IMG-20260314-WA0015.jpg"
+                   },
+                   {
+                       "id":  45,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/IMG-20260314-WA0017.jpg"
+                   },
+                   {
+                       "id":  46,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/IMG-20260404-WA0000.jpg"
+                   },
+                   {
+                       "id":  47,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/IMG-20260530-WA0008.jpg"
+                   },
+                   {
+                       "id":  48,
+                       "category":  "abriss",
+                       "image":  "assets/images/gallery/abriss/IMG-20260530-WA0009.jpg"
+                   },
+                   {
+                       "id":  49,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260425_111210.jpg"
+                   },
+                   {
+                       "id":  50,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260425_141829.jpg"
+                   },
+                   {
+                       "id":  51,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260425_141849.jpg"
+                   },
+                   {
+                       "id":  52,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260425_141924.jpg"
+                   },
+                   {
+                       "id":  53,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260425_141945.jpg"
+                   },
+                   {
+                       "id":  54,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260425_141948.jpg"
+                   },
+                   {
+                       "id":  55,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_102756.jpg"
+                   },
+                   {
+                       "id":  56,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_102758.jpg"
+                   },
+                   {
+                       "id":  57,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_103509.jpg"
+                   },
+                   {
+                       "id":  58,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_103512.jpg"
+                   },
+                   {
+                       "id":  59,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_110121.jpg"
+                   },
+                   {
+                       "id":  60,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_110145.jpg"
+                   },
+                   {
+                       "id":  61,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_110655.jpg"
+                   },
+                   {
+                       "id":  62,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_114832.jpg"
+                   },
+                   {
+                       "id":  63,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_114835.jpg"
+                   },
+                   {
+                       "id":  64,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_114836.jpg"
+                   },
+                   {
+                       "id":  65,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_131820.jpg"
+                   },
+                   {
+                       "id":  66,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_131858.jpg"
+                   },
+                   {
+                       "id":  67,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_131939.jpg"
+                   },
+                   {
+                       "id":  68,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_131951.jpg"
+                   },
+                   {
+                       "id":  69,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_131955.jpg"
+                   },
+                   {
+                       "id":  70,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_132032.jpg"
+                   },
+                   {
+                       "id":  71,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_132041.jpg"
+                   },
+                   {
+                       "id":  72,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_134345.jpg"
+                   },
+                   {
+                       "id":  73,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_134347.jpg"
+                   },
+                   {
+                       "id":  74,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_143622.jpg"
+                   },
+                   {
+                       "id":  75,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_143629.jpg"
+                   },
+                   {
+                       "id":  76,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_153104.jpg"
+                   },
+                   {
+                       "id":  77,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260509_153107.jpg"
+                   },
+                   {
+                       "id":  78,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260606_144203.jpg"
+                   },
+                   {
+                       "id":  79,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260606_144210.jpg"
+                   },
+                   {
+                       "id":  80,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260606_144257.jpg"
+                   },
+                   {
+                       "id":  81,
+                       "category":  "aussen",
+                       "image":  "assets/images/gallery/aussen/20260613_105603.jpg"
+                   },
+                   {
+                       "id":  82,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/20260707_181351.jpg"
+                   },
+                   {
+                       "id":  83,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/20260707_181352.jpg"
+                   },
+                   {
+                       "id":  84,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/20260710_165751.jpg"
+                   },
+                   {
+                       "id":  85,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/IMG-20260707-WA0003.jpg"
+                   },
+                   {
+                       "id":  86,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/IMG-20260707-WA0005.jpg"
+                   },
+                   {
+                       "id":  87,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/IMG-20260709-WA0002.jpg"
+                   },
+                   {
+                       "id":  88,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/IMG-20260709-WA0003.jpg"
+                   },
+                   {
+                       "id":  89,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/IMG-20260709-WA0004.jpg"
+                   },
+                   {
+                       "id":  90,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/IMG-20260709-WA0010.jpg"
+                   },
+                   {
+                       "id":  91,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/IMG-20260709-WA0017.jpg"
+                   },
+                   {
+                       "id":  92,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/IMG-20260709-WA0018.jpg"
+                   },
+                   {
+                       "id":  93,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/IMG-20260709-WA0019.jpg"
+                   },
+                   {
+                       "id":  94,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/IMG-20260710-WA0001.jpg"
+                   },
+                   {
+                       "id":  95,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/IMG-20260710-WA0005.jpg"
+                   },
+                   {
+                       "id":  96,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/IMG-20260710-WA0007.jpg"
+                   },
+                   {
+                       "id":  97,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/IMG-20260713-WA0001.jpg"
+                   },
+                   {
+                       "id":  98,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/IMG-20260714-WA0007.jpg"
+                   },
+                   {
+                       "id":  99,
+                       "category":  "dach",
+                       "image":  "assets/images/gallery/dach/IMG-20260714-WA0008.jpg"
+                   },
+                   {
+                       "id":  100,
+                       "category":  "geruest",
+                       "image":  "assets/images/gallery/geruest/20260611_121149.jpg"
+                   },
+                   {
+                       "id":  101,
+                       "category":  "geruest",
+                       "image":  "assets/images/gallery/geruest/20260611_121153.jpg"
+                   },
+                   {
+                       "id":  102,
+                       "category":  "geruest",
+                       "image":  "assets/images/gallery/geruest/20260611_121155.jpg"
+                   },
+                   {
+                       "id":  103,
+                       "category":  "geruest",
+                       "image":  "assets/images/gallery/geruest/20260611_122241.jpg"
+                   },
+                   {
+                       "id":  104,
+                       "category":  "geruest",
+                       "image":  "assets/images/gallery/geruest/20260612_165558.jpg"
+                   },
+                   {
+                       "id":  105,
+                       "category":  "geruest",
+                       "image":  "assets/images/gallery/geruest/20260612_165603.jpg"
+                   },
+                   {
+                       "id":  106,
+                       "category":  "geruest",
+                       "image":  "assets/images/gallery/geruest/20260612_175502.jpg"
+                   },
+                   {
+                       "id":  107,
+                       "category":  "geruest",
+                       "image":  "assets/images/gallery/geruest/20260612_175508.jpg"
+                   },
+                   {
+                       "id":  108,
+                       "category":  "geruest",
+                       "image":  "assets/images/gallery/geruest/20260612_175512.jpg"
+                   },
+                   {
+                       "id":  109,
+                       "category":  "geruest",
+                       "image":  "assets/images/gallery/geruest/20260612_175527.jpg"
+                   },
+                   {
+                       "id":  110,
+                       "category":  "geruest",
+                       "image":  "assets/images/gallery/geruest/20260704_135216.jpg"
+                   },
+                   {
+                       "id":  111,
+                       "category":  "geruest",
+                       "image":  "assets/images/gallery/geruest/20260710_165757.jpg"
+                   },
+                   {
+                       "id":  112,
+                       "category":  "geruest",
+                       "image":  "assets/images/gallery/geruest/IMG-20260612-WA0012.jpg"
+                   },
+                   {
+                       "id":  113,
+                       "category":  "haus",
+                       "image":  "assets/images/gallery/haus/20260425_113520.jpg"
+                   },
+                   {
+                       "id":  114,
+                       "category":  "haus",
+                       "image":  "assets/images/gallery/haus/20260425_113523.jpg"
+                   },
+                   {
+                       "id":  115,
+                       "category":  "haus",
+                       "image":  "assets/images/gallery/haus/20260516_115556.jpg"
+                   },
+                   {
+                       "id":  116,
+                       "category":  "haus",
+                       "image":  "assets/images/gallery/haus/20260516_115608.jpg"
+                   },
+                   {
+                       "id":  117,
+                       "category":  "haus",
+                       "image":  "assets/images/gallery/haus/20260516_115624.jpg"
+                   },
+                   {
+                       "id":  118,
+                       "category":  "haus",
+                       "image":  "assets/images/gallery/haus/20260516_115705.jpg"
+                   },
+                   {
+                       "id":  119,
+                       "category":  "haus",
+                       "image":  "assets/images/gallery/haus/20260516_115708.jpg"
+                   },
+                   {
+                       "id":  120,
+                       "category":  "haus",
+                       "image":  "assets/images/gallery/haus/20260516_115724.jpg"
+                   },
+                   {
+                       "id":  121,
+                       "category":  "haus",
+                       "image":  "assets/images/gallery/haus/20260516_115734.jpg"
+                   },
+                   {
+                       "id":  122,
+                       "category":  "haus",
+                       "image":  "assets/images/gallery/haus/20260516_115746.jpg"
+                   },
+                   {
+                       "id":  123,
+                       "category":  "haus",
+                       "image":  "assets/images/gallery/haus/20260516_115759.jpg"
+                   },
+                   {
+                       "id":  124,
+                       "category":  "haus",
+                       "image":  "assets/images/gallery/haus/20260516_115803.jpg"
+                   },
+                   {
+                       "id":  125,
+                       "category":  "haus",
+                       "image":  "assets/images/gallery/haus/20260516_115804.jpg"
+                   },
+                   {
+                       "id":  126,
+                       "category":  "haus",
+                       "image":  "assets/images/gallery/haus/20260516_115819.jpg"
+                   },
+                   {
+                       "id":  127,
+                       "category":  "haus",
+                       "image":  "assets/images/gallery/haus/Screenshot_20260302_205558_Chrome.jpg"
+                   }
+               ]
+}
