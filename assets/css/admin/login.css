@@ -1,0 +1,195 @@
+/* ===========================================================
+   LOGIN PAGE
+===========================================================*/
+
+.login-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+    background:
+        linear-gradient(
+            rgba(247,244,239,.88),
+            rgba(247,244,239,.88)
+        ),
+        url("../../images/hero/herobackground.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+/* ===========================================================
+   LOGIN CARD
+===========================================================*/
+
+.login-card{
+
+    width:min(420px,100%);
+
+    padding:50px;
+
+    background:rgba(255,255,255,.78);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-lg);
+
+    text-align:center;
+
+}
+
+
+/* ===========================================================
+   LOGO
+===========================================================*/
+
+.login-logo{
+
+    width:140px;
+
+    margin-bottom:25px;
+
+}
+
+.login-tag{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    margin-bottom:20px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.7);
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.login-card h1{
+
+    font-size:2.3rem;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    margin-bottom:18px;
+
+}
+
+.login-card p{
+
+    margin-bottom:40px;
+
+    color:var(--text-light);
+
+}
+
+
+/* ===========================================================
+   FORM
+===========================================================*/
+
+.login-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+}
+
+.form-group label{
+
+    font-weight:600;
+
+}
+
+.form-group input{
+
+    width:100%;
+
+    padding:16px 18px;
+
+    border:1px solid rgba(0,0,0,.08);
+
+    border-radius:var(--radius-md);
+
+    background:white;
+
+    font-size:1rem;
+
+    transition:var(--transition);
+
+}
+
+.form-group input:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(166,122,91,.15);
+
+}
+
+
+/* ===========================================================
+   BUTTON
+===========================================================*/
+
+.login-form .btn-primary{
+
+    width:100%;
+
+    justify-content:center;
+
+    margin-top:10px;
+
+}
+
+
+/* ===========================================================
+   MOBILE
+===========================================================*/
+
+@media(max-width:768px){
+
+    .login-card{
+
+        padding:36px 28px;
+
+    }
+
+}

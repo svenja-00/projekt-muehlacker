@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Projektverwaltung</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Basis -->
+
+    <link rel="stylesheet" href="assets/css/base/reset.css">
+    <link rel="stylesheet" href="assets/css/base/variables.css">
+    <link rel="stylesheet" href="assets/css/base/layout.css">
+    <link rel="stylesheet" href="assets/css/base/typography.css">
+
+    <!-- Komponenten -->
+
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/components/cards.css">
+
+    <!-- Admin -->
+
+    <link rel="stylesheet" href="assets/css/admin/sidebar.css">
+    <link rel="stylesheet" href="assets/css/admin/dashboard.css">
+    <link rel="stylesheet" href="assets/css/admin/tasks.css">
+
+</head>
+
+<body>
+
+<div class="admin-layout">
+
+    <aside class="admin-sidebar">
+
+        <img
+            src="assets/images/branding/logo.png"
+            class="admin-logo"
+            alt="Projekt Mühlacker">
+
+        <h2 class="admin-title">
+
+            Projektverwaltung
+
+        </h2>
+
+        <nav class="admin-nav">
+
+            <a class="admin-link active" data-page="dashboard">
+    Dashboard
+</a>
+
+<a class="admin-link" data-page="tasks">
+    Aufgaben
+</a>
+
+<a class="admin-link" data-page="gallery">
+    Galerie
+</a>
+
+<a class="admin-link" data-page="timeline">
+    Bautagebuch
+</a>
+
+<a class="admin-link" data-page="settings">
+    Einstellungen
+</a>
+
+<a href="index.html" class="logout-button">
+
+    ← Abmelden
+
+</a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="admin-content">
+
+    <header class="admin-header">
+
+        <div>
+
+            <h1>Dashboard</h1>
+
+            <p>
+
+                Willkommen zurück in der Projektverwaltung.
+
+            </p>
+
+        </div>
+
+    </header>
+
+    <section class="admin-dashboard">
+
+        <div class="admin-stats">
+
+            <div class="card stat-card">
+
+                <span class="stat-icon">📈</span>
+
+                <h3>Fortschritt</h3>
+
+                <strong id="admin-progress">9%</strong>
+
+            </div>
+
+            <div class="card stat-card">
+
+                <span class="stat-icon">✔</span>
+
+                <h3>Offene Aufgaben</h3>
+
+                <strong id="admin-tasks">18</strong>
+
+            </div>
+
+            <div class="card stat-card">
+
+                <span class="stat-icon">📷</span>
+
+                <h3>Bilder</h3>
+
+                <strong id="admin-images">127</strong>
+
+            </div>
+
+            <div class="card stat-card">
+
+                <span class="stat-icon">🏗</span>
+
+                <h3>Baustellentage</h3>
+
+                <strong id="admin-days">8</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+</div>
+
+<script src="assets/js/admin/tasks.js"></script>
+<script src="assets/js/admin/gallery.js"></script>
+<script src="assets/js/admin/tasks-view.js"></script>
+<script src="assets/js/admin/app.js"></script>
+
+
+</body>
+
+</html>
