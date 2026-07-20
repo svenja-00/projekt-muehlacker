@@ -5,26 +5,104 @@
 
 let tasks = [];
 
-// ---------------------------------------------------
-// Daten laden
-// ---------------------------------------------------
+
+// ===================================================
+// Aufgaben laden
+// ===================================================
 
 async function loadTasks() {
 
-    try {
+    const { data, error } = await db
+        .from("tasks")
+        .select("data")
+        .eq("id", "tasks")
+        .single();
 
-        const response = await fetch("assets/data/tasks.json");
+    if (error) {
 
-        tasks = await response.json();
+        console.error("Fehler beim Laden:", error);
+        return;
 
-        console.log("Aufgaben geladen", tasks);
+    }
+
+    tasks = data.data;
+
+    console.log("Aufgaben geladen", tasks);
+
+}
+
+
+// ===================================================
+// Aufgaben speichern
+// ===================================================
+
+async function saveTasks() {
+
+    const { error } = await db
+        .from("tasks")
+        .update({
+            data: tasks
+        })
+        .eq("id", "tasks");
+
+    if (error) {
+
+        console.error("Fehler beim Speichern:", error);
+        return;
 
     }
 
-    catch (error) {
+    console.log("Aufgaben gespeichert");
 
-        console.error("Fehler beim Laden der Aufgaben", error);
+}
 
-    }
+
+// ===================================================
+// Aufgabe finden
+// ===================================================
+
+function findTask(groupId, categoryTitle, taskTitle) {
+
+    const group = tasks.groups.find(
+        group => group.id === groupId
+    );
+
+    if (!group) return null;
+
+    const category = group.categories.find(
+        category => category.title === categoryTitle
+    );
+
+    if (!category) return null;
+
+    return category.tasks.find(
+        task => task.title === taskTitle
+    );
+
+}
+
+
+// ===================================================
+// Status ändern
+// ===================================================
+
+async function updateTaskStatus(
+    groupId,
+    categoryTitle,
+    taskTitle,
+    status
+) {
+
+    const task = findTask(
+        groupId,
+        categoryTitle,
+        taskTitle
+    );
+
+    if (!task) return;
+
+    task.status = status;
+
+    await saveTasks();
 
 }

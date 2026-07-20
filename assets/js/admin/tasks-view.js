@@ -159,22 +159,45 @@ function renderTasksView() {
 // ===================================================
 
 function initTaskEvents() {
-console.log("initTaskEvents gestartet");
+
     const taskItems = document.querySelectorAll(".task-item");
 
     taskItems.forEach(item => {
 
-        item.addEventListener("click", () => {
+        item.addEventListener("click", async () => {
 
-    toggleTaskStatus(
+            const task = findTask(
+                item.dataset.group,
+                item.dataset.category,
+                item.dataset.task
+            );
 
-        item.dataset.group,
-        item.dataset.category,
-        item.dataset.task
+            if (!task) return;
 
-    );
+            // Status wechseln
+            switch (task.status) {
 
-});
+                case "todo":
+                    task.status = "doing";
+                    break;
+
+                case "doing":
+                    task.status = "done";
+                    break;
+
+                default:
+                    task.status = "todo";
+                    break;
+
+            }
+
+            // Speichern
+            await saveTasks();
+
+            // Neu zeichnen
+            renderTasksView();
+
+        });
 
     });
 
