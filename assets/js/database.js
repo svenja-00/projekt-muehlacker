@@ -10,4 +10,4 @@ const db = window.supabase.createClient(
     SUPABASE_KEY
 );
 
-console.log("DB:", db);
+console.log(db);

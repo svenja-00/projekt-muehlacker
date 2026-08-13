@@ -5,27 +5,24 @@
 function renderTasksView() {
 
     console.log("renderTasksView gestartet");
+
     const container = document.querySelector(".admin-dashboard");
 
     if (!container) return;
 
     let html = `
 
-        <div class="card card-padding">
+<div class="tasks-toolbar">
 
-            <div class="tasks-header">
+    <button id="add-task-btn" class="btn-primary">
 
-                <h2>Aufgaben</h2>
+        + Aufgabe hinzufügen
 
-                <button class="button-primary">
+    </button>
 
-                    + Neue Aufgabe
+</div>
 
-                </button>
-
-            </div>
-
-    `;
+`;
 
     tasks.groups.forEach(group => {
 
@@ -54,18 +51,9 @@ function renderTasksView() {
 
                 <div class="task-group-header">
 
-                    <h3>
+                    <h3>${group.icon} ${group.title}</h3>
 
-                        ${group.icon}
-                        ${group.title}
-
-                    </h3>
-
-                    <span>
-
-                        ${done} / ${total}
-
-                    </span>
+                    <span>${done} / ${total}</span>
 
                 </div>
 
@@ -75,11 +63,7 @@ function renderTasksView() {
 
             html += `
 
-                <h4>
-
-                    ${category.title}
-
-                </h4>
+                <h4>${category.title}</h4>
 
                 <ul class="task-list">
 
@@ -89,42 +73,25 @@ function renderTasksView() {
 
                 let icon = "⬜";
 
-                if(task.status === "done"){
-
-                    icon = "✅";
-
-                }
-
-                if(task.status === "doing"){
-
-                    icon = "🟡";
-
-                }
+                if (task.status === "doing") icon = "🟡";
+                if (task.status === "done") icon = "✅";
 
                 html += `
 
-    <li
-        class="task-item"
-        data-group="${group.id}"
-        data-category="${category.title}"
-        data-task="${task.title}"
-    >
+                    <li
+                        class="task-item"
+                        data-group="${group.id}"
+                        data-category="${category.title}"
+                        data-task="${task.title}"
+                    >
 
-        <span class="task-status">
+                        <span class="task-status">${icon}</span>
 
-            ${icon}
+                        <span class="task-title">${task.title}</span>
 
-        </span>
+                    </li>
 
-        <span class="task-title">
-
-            ${task.title}
-
-        </span>
-
-    </li>
-
-`;
+                `;
 
             });
 
@@ -144,94 +111,244 @@ function renderTasksView() {
 
     });
 
-    html += `
-
-        </div>
-
-    `;
-
     container.innerHTML = html;
-        initTaskEvents();
+
+initTaskEvents();
+initAddTaskButton();
+
 }
 
+
 // ===================================================
-// Aufgaben-Events
+// Aufgaben Events
 // ===================================================
 
 function initTaskEvents() {
 
-    const taskItems = document.querySelectorAll(".task-item");
-
-    taskItems.forEach(item => {
+    document.querySelectorAll(".task-item").forEach(item => {
 
         item.addEventListener("click", async () => {
 
             const task = findTask(
+
                 item.dataset.group,
                 item.dataset.category,
                 item.dataset.task
+
             );
 
             if (!task) return;
 
-            // Status wechseln
-            switch (task.status) {
+            showTaskModal(task);
 
-                case "todo":
-                    task.status = "doing";
-                    break;
-
-                case "doing":
-                    task.status = "done";
-                    break;
-
-                default:
-                    task.status = "todo";
-                    break;
-
-            }
-
-            // Speichern
-            await saveTasks();
-
-            // Neu zeichnen
-            renderTasksView();
+            
 
         });
 
     });
 
 }
+function initAddTaskButton() {
 
-function toggleTaskStatus(groupId, categoryTitle, taskTitle) {
+    const button = document.getElementById("add-task-btn");
 
-    const group = tasks.groups.find(g => g.id === groupId);
+    if (!button) return;
 
-    if (!group) return;
+    button.addEventListener("click", () => {
 
-    const category = group.categories.find(c => c.title === categoryTitle);
+        showTaskModal();
 
-    if (!category) return;
+    });
 
-    const task = category.tasks.find(t => t.title === taskTitle);
+}
+function showTaskModal(task = null) {
 
-    if (!task) return;
+    const modal = document.createElement("div");
 
-    switch (task.status) {
+    modal.className = "modal-overlay";
 
-        case "todo":
-            task.status = "doing";
-            break;
+    modal.innerHTML = `
 
-        case "doing":
-            task.status = "done";
-            break;
+<div class="modal">
 
-        default:
-            task.status = "todo";
-            break;
+    <h2>Neue Aufgabe</h2>
+
+    <label>Titel</label>
+
+    <input
+        type="text"
+        id="new-task-title"
+        placeholder="z.B. Fensterbank montieren"
+    >
+
+    <label>Gruppe</label>
+
+    <select id="new-task-group"></select>
+
+    <label>Kategorie</label>
+
+    <select id="new-task-category"></select>
+
+    <label>Status</label>
+
+    <select id="new-task-status">
+
+        <option value="todo">Todo</option>
+        <option value="doing">In Arbeit</option>
+        <option value="done">Erledigt</option>
+
+    </select>
+
+    <div class="modal-buttons">
+
+        <button id="cancel-task">Abbrechen</button>
+
+        <button id="save-task" class="btn-primary">
+
+            Speichern
+
+        </button>
+
+    </div>
+
+</div>
+
+`;
+
+    document.body.appendChild(modal);
+    if (task) {
+
+    document.querySelector(".modal h2").textContent = "Aufgabe bearbeiten";
+
+} else {
+
+    document.querySelector(".modal h2").textContent = "Neue Aufgabe";
+
+}
+if (task) {
+
+    document.getElementById("new-task-title").value = task.title;
+
+}
+if (task) {
+
+    document.getElementById("new-task-status").value = task.status;
+
+}
+if (!task) {
+
+    document.getElementById("new-task-title").focus();
+
+}
+    const groupSelect = document.getElementById("new-task-group");
+
+tasks.groups.forEach(group => {
+
+    groupSelect.innerHTML += `
+
+        <option value="${group.id}">
+
+            ${group.title}
+
+        </option>
+
+    `;
+
+});
+
+const categorySelect = document.getElementById("new-task-category");
+
+function loadCategories() {
+
+    const group = tasks.groups.find(g => g.id === groupSelect.value);
+
+    categorySelect.innerHTML = "";
+
+    group.categories.forEach(category => {
+
+        categorySelect.innerHTML += `
+
+            <option>
+
+                ${category.title}
+
+            </option>
+
+        `;
+
+    });
+
+}
+
+loadCategories();
+
+groupSelect.addEventListener("change", loadCategories);
+
+    document.getElementById("cancel-task").onclick = () => {
+
+        modal.remove();
+
+    };
+
+    document.getElementById("save-task").onclick = async () => {
+
+    const title = document
+        .getElementById("new-task-title")
+        .value
+        .trim();
+
+    if (!title) {
+
+        alert("Bitte einen Titel eingeben.");
+        return;
+
     }
 
-    renderTasksView();
+    const status =
+        document.getElementById("new-task-status").value;
+
+    if (task) {
+
+        // ===== Aufgabe bearbeiten =====
+
+        task.title = title;
+        task.status = status;
+
+    } else {
+
+        // ===== Neue Aufgabe =====
+
+        const groupId =
+            document.getElementById("new-task-group").value;
+
+        const categoryTitle =
+            document.getElementById("new-task-category").value;
+
+        const group =
+            tasks.groups.find(g => g.id === groupId);
+
+        const category =
+            group.categories.find(c => c.title === categoryTitle);
+
+        category.tasks.push({
+
+            title,
+            status
+
+        });
+
+    }
+
+    const success = await saveTasks();
+
+    if (success) {
+
+        modal.remove();
+
+        renderTasksView();
+
+    }
+
+};
 
 }

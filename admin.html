@@ -163,6 +163,35 @@
 
 </div>
 
+function calculateProgress() {
+
+    let total = 0;
+    let done = 0;
+
+    tasks.groups.forEach(group => {
+
+        group.categories.forEach(category => {
+
+            category.tasks.forEach(task => {
+
+                total++;
+
+                if (task.status === "done") {
+
+                    done++;
+
+                }
+
+            });
+
+        });
+
+    });
+
+    return Math.round(done / total * 100);
+
+}
+
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <script src="assets/js/database.js"></script>

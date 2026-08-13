@@ -18,14 +18,14 @@
             },
             {
               "title": "Fensterbänke absägen",
-              "status": "todo",
-              "plannedFor": "2026-07-18",
+              "status": "done",
+              "plannedFor": "",
               "note": "Muss vor dem Fenstereinbau erledigt sein."
             },
             {
               "title": "Glattstrich an allen Fensterlaibungen",
-              "status": "todo",
-              "plannedFor": "2026-07-18",
+              "status": "done",
+              "plannedFor": "",
               "note": "Vorbereitung für den Fensterbauer."
             }
           ]
@@ -35,7 +35,7 @@
           "tasks": [
             {
               "title": "Fensterbauer (Ende Juli)",
-              "status": "todo",
+              "status": "done",
               "plannedFor": "2026-07-30",
               "note": "Fenster werden montiert."
             }
@@ -84,7 +84,7 @@
             },
             {
               "title": "Solarthermie anschließen",
-              "status": "todo",
+              "status": "done",
               "plannedFor": "",
               "note": ""
             }
@@ -106,25 +106,25 @@
             {
               "title": "Graben ums Haus erweitern",
               "status": "todo",
-              "plannedFor": "",
-              "note": ""
+              "plannedFor": "2026-08-15",
+              "note": "Laufender Prozess"
             },
             {
               "title": "Dichtschlämme auftragen",
               "status": "todo",
-              "plannedFor": "",
+              "plannedFor": "2026-08-15",
               "note": ""
             },
             {
               "title": "Balkon abdichten",
               "status": "todo",
-              "plannedFor": "",
+              "plannedFor": "2026-08-15",
               "note": ""
             },
             {
               "title": "Balkongeländer demontieren",
               "status": "todo",
-              "plannedFor": "",
+              "plannedFor": "2026-08-15",
               "note": ""
             }
           ]

@@ -1,48 +1,76 @@
+console.log("tasks.js geladen");
+console.log(db);
 // ===================================================
 // Projekt Mühlacker
+// Öffentliche Aufgaben
+// ===================================================
+
+let taskGroups = [];
+
+
+// ===================================================
 // Aufgaben laden
 // ===================================================
 
 async function loadTasks() {
 
+    console.log("loadTasks gestartet");
+
     try {
 
-        const response = await fetch("assets/data/tasks.json");
+        const { data, error } = await db
+            .from("tasks")
+            .select("data")
+            .eq("id", "tasks")
+            .single();
 
-        const data = await response.json();
+        if (error) {
 
-        renderGroups(data.groups);
+            console.error("Fehler beim Laden:", error);
+            return;
+
+        }
+
+        taskGroups = data.data.groups;
+
+        console.log("Aufgaben geladen", taskGroups);
+
+        renderGroups(taskGroups);
 
     }
 
-    catch(error){
+    catch (error) {
 
-        console.error(error);
+        console.error("Exception:", error);
 
     }
 
 }
-
-loadTasks();
 
 
 // ===================================================
 // Gruppen rendern
 // ===================================================
 
-function renderGroups(groups){
+function renderGroups(groups) {
 
     const container =
         document.getElementById("tasks-container");
 
+    if (!container) {
+
+        console.warn("tasks-container nicht gefunden");
+        return;
+
+    }
+
     container.innerHTML = "";
 
-    groups.forEach(group=>{
+    groups.forEach(group => {
 
-        const card =
-            createTaskCard(group);
-
-        container.appendChild(card);
+        container.appendChild(
+            createTaskCard(group)
+        );
 
     });
 
@@ -50,32 +78,26 @@ function renderGroups(groups){
 
 
 // ===================================================
-// Eine Aufgabenkarte erzeugen
+// Aufgabenkarte
 // ===================================================
 
-function createTaskCard(group){
+function createTaskCard(group) {
 
-    const card =
-        document.createElement("div");
+    const card = document.createElement("div");
 
     card.className =
-    "task-card card card-padding card-hover";
-
-    // ----------------------------
-    // Fortschritt berechnen
-    // ----------------------------
+        "task-card card card-padding card-hover";
 
     let totalTasks = 0;
-
     let doneTasks = 0;
 
-    group.categories.forEach(category=>{
+    group.categories.forEach(category => {
 
-        category.tasks.forEach(task=>{
+        category.tasks.forEach(task => {
 
             totalTasks++;
 
-            if(task.status==="done"){
+            if (task.status === "done") {
 
                 doneTasks++;
 
@@ -86,9 +108,9 @@ function createTaskCard(group){
     });
 
     const percent =
-        Math.round(doneTasks / totalTasks *100);
-
-    // ----------------------------
+        totalTasks === 0
+            ? 0
+            : Math.round(doneTasks / totalTasks * 100);
 
     card.innerHTML = `
 
@@ -126,8 +148,8 @@ function createTaskCard(group){
 
         <div class="progress-bar">
 
-            <div class="progress-fill"
-
+            <div
+                class="progress-fill"
                 style="width:${percent}%">
 
             </div>
@@ -142,40 +164,49 @@ function createTaskCard(group){
 
         <div class="task-details">
 
-    ${group.categories.map(category => `
+            ${group.categories.map(category => `
 
-        <div class="task-category">
+                <div class="task-category">
 
-            <h4>${category.title}</h4>
+                    <h4>${category.title}</h4>
 
-            <ul>
+                    <ul>
 
-                ${category.tasks.map(task=>`
+                        ${category.tasks.map(task => `
 
-                    <li class="status-${task.status}">
+                            <li class="status-${task.status}">
 
-                        <span class="status-dot"></span>
+                                <span class="status-dot"></span>
 
-                        ${task.title}
+                                ${task.title}
 
-                    </li>
+                            </li>
 
-                `).join("")}
+                        `).join("")}
 
-            </ul>
+                    </ul>
+
+                </div>
+
+            `).join("")}
 
         </div>
 
-    `).join("")}
-
-</div>
-
     `;
-card.addEventListener("click",()=>{
 
-    card.classList.toggle("open");
+    card.addEventListener("click", () => {
 
-});
+        card.classList.toggle("open");
+
+    });
+
     return card;
 
 }
+
+
+// ===================================================
+// Start
+// ===================================================
+
+loadTasks();
